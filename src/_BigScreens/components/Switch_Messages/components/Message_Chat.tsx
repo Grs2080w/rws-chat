@@ -1,4 +1,4 @@
-import { dataMessage } from "../../types"
+import { dataMessage } from "../../../../types/types"
 
 interface Props {
 	message: dataMessage
