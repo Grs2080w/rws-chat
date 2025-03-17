@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# Rws-Chat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center"></div>
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Rws-Chat is a real-time chat application developed with React, TypeScript, and Socket.IO. It allows users to create chat rooms, send text and image messages, and see who is online in real time.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Chat room creation
+- Sending text and image messages
+- User join and leave notifications
+- Real-time typing indication
+- Responsive interface for different screen sizes
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## Project Structure
+
+- .env.template
+- .gitignore
+- index.html
+- package.json
+- src/
+  - \_BigScreens/
+    - components/
+      Chat.tsx
+      ...
+  - \_SmallScreens/
+    - components/
+      ...
+  - assets/
+    - 3dots.gif
+    - favicon.ico
+  - Big_App.tsx
+  - hooks/
+    - Server/
+      ...
+      useDelayToKeyPressed.tsx
+      useDelayToKeyPressedFriend.tsx
+      useKeyPress.tsx
+      useScrollToBottom.tsx
+      useTimeOut.tsx
+  - main.tsx
+  - Small_App.tsx
+  - types/
+    - types.tsx
+- style.css
+
+---
+
+## Installation
+
+Follow the steps below to install and run the project locally:
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/Grs2080w/rws-chat.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+cd rws-chat
 ```
+
+3. Install dependencies:
+
+```sh
+npm install
+```
+
+4. Create a `.env` file based on `.env.template` and configure the Socket.IO server URL:
+
+```sh
+cp .env.template .env
+```
+
+5. Start the development server:
+
+```sh
+npm run dev
+```
+
+---
+
+## API
+
+This project relies on an API to manage chat rooms and messages. The API can be found in the following repository:
+
+https://github.com/Grs2080w/rws-chat-server.git
+
+Make sure to follow the instructions in the API repository to set it up and run it correctly.

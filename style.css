@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Configuração global */
+html {
+    background-color: rgb(3, 2, 32);
+    overflow: hidden;
+}
+
+/* Barras de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 245, 245, 0.329);
+    border-radius: 20px;
+}
+
+/* Containers de mensagens */
+.my-containerMessage {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.friend-containerMessage {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Entrada do usuário */
+.userEntry {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+
+.userEntry-message {
+    text-align: center;
+    font-size: large;
+    padding: 2px;
+}
+
+/* Estilo para input de arquivo */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilo para textarea */
+textarea {
+    resize: none;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+/* Botões de mensagem */
+#buttonMessage,
+#buttonMessage2 {
+    -webkit-tap-highlight-color: transparent;
+}
