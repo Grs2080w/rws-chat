@@ -1,10 +1,15 @@
 # Rws-Chat
 
-<div align="center"></div>
+<div align="center">
+  <img width="80%" src="https://github.com/user-attachments/assets/fcedba5d-9f32-445a-b51f-001559a40de6" />
+</div>
 
 ## Introduction
 
 Rws-Chat is a real-time chat application developed with React, TypeScript, and Socket.IO. It allows users to create chat rooms, send text and image messages, and see who is online in real time.
+
+</br>
+
 
 ## Features
 
@@ -14,7 +19,7 @@ Rws-Chat is a real-time chat application developed with React, TypeScript, and S
 - Real-time typing indication
 - Responsive interface for different screen sizes
 
----
+  </br>
 
 ## Project Structure
 
@@ -47,8 +52,8 @@ Rws-Chat is a real-time chat application developed with React, TypeScript, and S
   - types/
     - types.tsx
 - style.css
-
----
+- 
+</br>
 
 ## Installation
 
@@ -84,7 +89,10 @@ cp .env.template .env
 npm run dev
 ```
 
----
+</br>
+
+
+</br>
 
 ## API
 
