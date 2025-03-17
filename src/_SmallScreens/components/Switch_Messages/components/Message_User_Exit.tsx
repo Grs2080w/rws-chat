@@ -5,8 +5,6 @@ interface Props {
 }
 
 export default function Message_User_Exit({ message }: Props) {
-	console.log(message)
-
 	let style = {
 		container: "m-1 text-center text-sm font-semibold bg-red-600 rounded-md text-black",
 		message: "text-center text-sm p-0.5 font-semibold",
